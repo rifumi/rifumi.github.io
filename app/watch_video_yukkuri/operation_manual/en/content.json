@@ -1,0 +1,149 @@
+{
+    "user_guide": {
+        "title": "User Guide",
+        "sections": [
+            {
+                "title": "Introduction",
+                "content": [
+                    "The EULA agreement screen will be displayed during the initial launch of the app.",
+                    "Please agree to the End User License Agreement (EULA) (This is required each time the EULA is updated.)",
+                    "You can press the Agree button when you reach the end of the scroll."
+                ]
+            },
+            {
+                "title": "Selecting a Video",
+                "content": [
+                    "Getting Started:",
+                    "The video selection view will appear after agreeing to the EULA."
+                ]
+            },
+            {
+                "title": "Opening Video Content",
+                "content": [
+                    "Accessing the Menu:",
+                    "Tap the upper-right gear icon to open the menu.",
+                    "Tap \"choose video\" to access the video selection view.",
+                    "Select a video. On some devices, you might need to tap \"SELECT\"."
+                ]
+            },
+            {
+                "title": "Playback and Pause Instructions",
+                "content": [
+                    "Controlling Playback:",
+                    "Tap the center of the display to:",
+                    "- Play while paused.",
+                    "- Pause during playback.",
+                    "*1"
+                ]
+            },
+            {
+                "title": "Adjusting Playback Speed",
+                "content": [
+                    "Fine-Tuning Speed:",
+                    "When using the turtle or rabbit icons:",
+                    "Tap the turtle icon to slow down playback. *The lowest speed is 1 frame per 2 seconds.",
+                    "Tap the rabbit icon to speed up playback. *The highest speed is 1x.",
+                    "Tapping on these icons will adjust the playback speed, and the new speed will be shown at the bottom of the screen.",
+                    "*You can't change the playback speed while in fast-forward mode."
+                ]
+            },
+            {
+                "title": "Changing Playback Speed from a Dropdown List",
+                "content": [
+                    "Customizing Speed Factors:",
+                    "Open the settings view by tapping the upper-right gear icon.",
+                    "The playback speed factor selection UI is located below the choose video UI.",
+                    "Choose a playback speed factor from the provided list.",
+                    "*You can't change the playback speed factor while in fast-forward mode."
+                ]
+            },
+            {
+                "title": "Explanation of Playback Speed Coefficients",
+                "content": [
+                    "Understanding Speed Factors:",
+                    "The \"speed factor: 1/x\" item refers to the video player's reference parameter.",
+                    "The \"switch interval: x.y\" item controls the interval between picture frame switches. In cases of insufficient device power, frame rendering might be skipped."
+                ]
+            },
+            {
+                "title": "Enabling Fast Forward",
+                "content": [
+                    "The fast-forward mode is a mode in which the speed factor is set to 1.5, effectively increasing the playback speed by 1.5times.",
+                    "To enable fast-forward mode:",
+                    "1. Turn on the fast-forward toggle switch in the menu.",
+                    "2. Close the menu.(The fast-forward operation UI is displayed.)",
+                    "3. Tap the fast-forward button to enable it.",
+                    "You can toggle fast-forward on or off with a single touch while playback is active.",
+                    "*You can't change the playback speed factor while using the turtle, rabbit icons, or the playback speed coefficient UI in fast-forward mode."
+                ]
+            },
+            {
+                "title": "Navigating Frame by Frame",
+                "content": [
+                    "Precise Frame Control:",
+                    "Tap the right side of the display to move one frame forward.",
+                    "Tap the left side of the display to move one frame back."
+                ]
+            },
+            {
+                "title": "Continuous Frame Navigation",
+                "content": [
+                    "Smooth Frame Adjustment:",
+                    "Hold down the right side of the display to advance frames continuously.",
+                    "Hold down the left side of the display to reverse frames continuously.",
+                    "Note: These functions might not work properly if device capabilities are insufficient. In such cases, consider using taps to update frames."
+                ]
+            },
+            {
+                "title": "Setting Start and End Positions(looped playback within a specified range)",
+                "content": [
+                    "To update the start position, double-tap the start position value at the desired seek position.",
+                    "To update the end position, double-tap the end position value at the desired seek position. If playback is ongoing, it will return to the start position immediately."
+                ]
+            },
+            {
+                "title": "Navigating to Start or End Positions",
+                "content": [
+                    "Double-tap the \"start pos\" label to move to the start position.",
+                    "Double-tap the \"end pos\" label to move to the end position."
+                ]
+            },
+            {
+                "title": "Configuring Playback UI",
+                "content": [
+                    "Personalizing the Interface:",
+                    "Tap the upper-right gear button.",
+                    "This screen allows you to set the initial UI display when opening a video."
+                ]
+            },
+            {
+                "title": "Enable Setting for UI Elements",
+                "content": [
+                    "When fast forward toggle switch is enabled:",
+                    "- The fast-forward button will appear at the top center of the display.",
+                    "When slow down or speed up button is enabled:",
+                    "- The turtle and rabbit buttons will appear at the bottom center of the display. The turtle button slows down playback (*lowest speed is 1 frame per 2 seconds), while the rabbit button speeds it up (*highest speed is 1x). Adjust the speed using these buttons, and the new speed factor will be shown at the bottom of the screen.",
+                    "When start and end position info is enabled:",
+                    "- Start and end position information will appear at the bottom left and bottom right of the display."
+                ]
+            },
+            {
+                "title": "Switching UI Display by Tapping the Upper Left Corner",
+                "content": [
+                    "You can hide or show the on-screen UI by tapping the upper left corner.(touch upper to display.)",
+                    "This settings screen will modify the behavior when performing this action.",
+                    "When move prev or next 1 frame button is enabled:",
+                    "- The previous frame button will be on the left side of the display.",
+                    "- The next frame button will be on the right side of the display.",
+                    "*Note: These functions are still usable even if not visible."
+                ]
+            },
+            {
+                "title": "Additional Information",
+                "content": [
+                    "*1: Depending on the device settings, tapping might be interpreted as pressing and holding, leading to unintended actions. In such cases, In such cases, please extend the long press detection time in the device settings to prevent this issue."
+                ]
+            }
+        ]
+    }
+}

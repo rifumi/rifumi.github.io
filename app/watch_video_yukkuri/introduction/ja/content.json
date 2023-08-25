@@ -1,0 +1,10 @@
+{
+    "watch_video_yukkuri": {
+        "title": "watch_video_yukkuri",
+        "introduction": "Android用の動画再生アプリです。目的は、動きの特徴を把握し、動きの問題点を見つけることです。",
+        "page": "app/watch_video_yukkuri",
+        "operation": "コマ送りで動きを確認することで、改善点を見つけます。また、動画の再生位置と終了位置を変更することで特定の範囲を繰り返し視聴することができます。",
+        "to_manual": "操作説明",
+        "to_privacy_policy": "プライバシーポリシー"
+    }
+}

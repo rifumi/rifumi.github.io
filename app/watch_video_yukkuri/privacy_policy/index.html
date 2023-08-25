@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <title id="head-title"></title>
+</head>
+
+<body>
+  <div class="container card">
+    <header class="sticky-md-top">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a href="/" class="nav-link">App</a></li>
+              <li class="nav-item"><a href="/" class="nav-link">Android</a></li>
+              <li class="nav-item"><a href="/app/watch_video_yukkuri" class="nav-link">watch_video_yukkuri</a></li>
+              <li class="nav-item" aria-current="page" class="nav-link active">
+                privacy_policy
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="dropdown text-end">
+        <button class="btn btn-secondary dropdown-toggle btn-sm" type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          Language
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+          <li><button class="dropdown-item" type="button" data-lang="en">en</button></li>
+          <li><button class="dropdown-item" type="button" data-lang="ja">ja</button></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <h1 class="text-md-start text-sm-center" id="page_title">watch_video_yukkuri</h1>
+      <img src="../head_watch_video_yukkuri.jpg" alt="head_watch_video_yukkuri_image" class="card-img-top">
+      <div class="card-body">
+        <h1 id="title"></h1>
+        <p id="preface">
+        </p>
+        <h2 id="item1-title">
+        </h2>
+
+        <p id="item1-content">
+        </p>
+
+        <h2 id="item2-title">
+        </h2>
+
+        <p id="item2-content">
+        </p>
+
+        <h2 id="item3-title">
+        </h2>
+
+        <p id="item3-content">
+        </p>
+
+        <h2 id="item4-title">
+        </h2>
+
+        <p id="item4-content">
+        </p>
+
+        <h2 id="item5-title">
+        </h2>
+
+        <p id="item5-content">
+        </p>
+
+        <p>Last Updated: 2023-08-25</p>
+      </div>
+    </main>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script>
+    var dropdownElementList = [].slice.call(document.querySelectorAll('.dropdown-toggle'))
+    var dropdownList = dropdownElementList.map(function (dropdownToggleEl) {
+      return new bootstrap.Dropdown(dropdownToggleEl)
+    })
+    const elements = {
+      head_title: document.getElementById("head-title"),
+      title: document.getElementById("title"),
+      preface: document.getElementById("preface"),
+      item1_title: document.getElementById("item1-title"),
+      item1_content: document.getElementById("item1-content"),
+      item2_title: document.getElementById("item2-title"),
+      item2_content: document.getElementById("item2-content"),
+      item3_title: document.getElementById("item3-title"),
+      item3_content: document.getElementById("item3-content"),
+      item4_title: document.getElementById("item4-title"),
+      item4_content: document.getElementById("item4-content"),
+      item5_title: document.getElementById("item5-title"),
+      item5_content: document.getElementById("item5-content")
+    };
+    function getContentJsonPathAndProcList(lang) {
+      return [{ path: `./${lang}/content.json`, readProc: postProcWhenChangeLang }];
+    }
+    function postProcWhenChangeLang(data) {
+      elements.head_title.textContent = data["title"]
+      elements.title.textContent = data["title"]
+      elements.preface.textContent = data["preface"]
+      elements.item1_title.textContent = data["item1"].title
+      elements.item1_content.textContent = data["item1"].content
+      elements.item2_title.textContent = data["item2"].title
+      elements.item2_content.textContent = data["item2"].content
+      elements.item3_title.textContent = data["item3"].title
+      elements.item3_content.textContent = data["item3"].content
+      elements.item4_title.textContent = data["item4"].title
+      elements.item4_content.innerHTML = decode(data["item4"].content);
+      elements.item5_title.textContent = data["item5"].title
+      elements.item5_content.textContent = data["item5"].content
+    }
+  </script>
+  <script src="/js/util.js"></script>
+  <script src="/js/lang.js"></script>
+</body>
+
+</html>
