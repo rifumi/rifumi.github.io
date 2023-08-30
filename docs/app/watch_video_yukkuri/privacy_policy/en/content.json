@@ -1,0 +1,24 @@
+{
+    "title": "Privacy policy",
+    "preface": "This Privacy Policy explains the privacy and personal information protection of the watch_video_yukkuri(hereinafter referred to as \"this app\"). By using this app, you are considered to have agreed to this Privacy Policy. For further details regarding personal information protection, please review the following content.",
+    "item1":{
+        "title": "1. Information Collection",
+        "content": "This app accesses the user's video media and performs video playback. The app does not collect the user's video files themselves. In some cases, information related to video operations within the app may be temporarily collected, but these are processed only on the device and are not sent externally."
+    },
+    "item2":{
+        "title": "2. Use of Information",
+        "content": "This app uses necessary information to play the user's video media. This includes the path and metadata (such as title, length) of video files. This information is used to perform operations and display content as per user requests, but it is not sent outside the app."
+    },
+    "item3":{
+        "title": "3. Data Sharing and Third-Party Services",
+        "content": "This app does not share user's video media or related information with third parties. Additionally, user information is not transmitted to third-party services like advertising networks. However, this is not a permanent situation and does not deny the possibility of changes due to app updates."
+    },
+    "item4":{
+        "title":"4. Contact",
+        "content": "This app will respond appropriately to inquiries from users. If you have any questions or concerns, please feel free to contact us using the provided &lt;a href='https://docs.google.com/forms/d/e/1FAIpQLSceDKpc1LYu6FCicMB80i4KS-PkXyZa_ww11dMco1Rn69DDWQ/viewform?usp=sharing'&gt;contact form&lt;/a&gt;"
+    },
+    "item5":{
+        "title": "5. Changes to Privacy Policy",
+        "content": "This app may change its privacy policy. In case of significant changes, notifications will be provided within the app. It is recommended to periodically review changes to the privacy policy."
+    }
+}

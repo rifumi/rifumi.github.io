@@ -1,0 +1,10 @@
+{
+    "watch_video_yukkuri": {
+        "title": "watch_video_yukkuri",
+        "introduction": "It is a video playback app for Android. The purpose is to understand the characteristics of the movement and identify any issues with the motion.",
+        "page": "app/watch_video_yukkuri",
+        "operation": "By checking the movement frame by frame, you can identify areas for improvement. Additionally, you can repeat playback within specific ranges by adjusting the starting and ending positions of the video.",
+        "to_manual": "How to",
+        "to_privacy_policy": "Privacy Policy"
+    }
+}
